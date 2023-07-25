@@ -1,0 +1,23 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  background-color: var(--color-grey-9);
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 10%;
+}
+
+.cursor-dark{
+  cursor: url('../assets/icons/cursor-color-black.svg'), auto;
+}
+
+.cursor-light {
+  cursor: url('../assets/icons/cursor-color-white.svg'), auto;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 0 20%;
+  }
+}

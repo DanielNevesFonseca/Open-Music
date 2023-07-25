@@ -1,0 +1,139 @@
+.main {
+  max-width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+}
+
+/* main__manageFilters */
+
+.main__manage-filters {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+}
+
+.manage-filters__box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.manage-filters__buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.875rem;
+
+}
+
+.manage-filters__price-range {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.manage-filters__price-range>h2,
+.manage-filters__price-range>p {
+  flex: 1;
+  width: 200px;
+}
+
+.manage-filters__price-range>p {
+  text-align: right;
+}
+
+.price-range__input {
+  width: 100%;
+  background-color: #ab6bfdfd;
+  height: 0.625rem;
+  appearance: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.price-range__input::-webkit-slider-thumb {
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  border: 7px solid var(--color-brand-1);
+  background-color: var(--color-grey-7);
+}
+
+/* main__render-cards */
+
+.main__render-cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+  margin-bottom: 3.125rem;
+}
+
+.render-cards__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.375rem;
+}
+
+.render-cards__item {
+  width: 100%;
+  height: 18.75rem;
+  max-width: 100%;
+  border-radius: var(--radius-1);
+  background-color: var(--color-grey-8);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.render-cards__item:hover {
+  background-color: var(--color-grey-7);
+  z-index: 100;
+  opacity: 90%;
+  transition: all ease-in-out 0.3s;
+  scale: 1.05;
+}
+
+.item__image {
+  width: 100%;
+  height: 45%;
+  object-fit: cover;
+  border-radius: var(--radius-1) var(--radius-1) 0 0;
+  z-index: 0;
+}
+
+.price {
+  font-size: 0.875rem;
+}
+
+.item__buy-container {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  justify-content: space-between;
+  padding-bottom: 0.625rem;
+}
+
+.item__name-and-year,
+.item__album-title,
+.item__buy-container {
+  margin: 8px 24px;
+}
+
+@media screen and (min-width:1024px) {
+  .render-cards__item {
+    width: 46.9%;
+  }
+
+  .render-cards__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

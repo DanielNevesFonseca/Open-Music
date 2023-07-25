@@ -1,0 +1,11 @@
+.header {
+  height: 9.375rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-color {
+  color: var(--color-brand-1);
+}

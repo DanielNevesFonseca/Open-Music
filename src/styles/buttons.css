@@ -1,0 +1,25 @@
+button {
+  width: max-content;
+  height: fit-content;
+  font-size: var(--font-3);
+  padding: 0.25rem 0.375rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius-1);
+  font-size: var(--font-3);
+  font-weight: 500;
+}
+
+.btn-default {
+  background-color: var(--color-grey-8);
+  color: var(--color-grey-1);
+}
+
+.btn-default:hover {
+  background-color: var(--color-grey-7);
+}
+
+.btn-default:focus {
+  background-color: var(--color-grey-1);
+  color: var(--color-grey-9);
+}
+
